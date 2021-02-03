@@ -7,31 +7,29 @@ h1 {
     margin: 0 auto;
     line-height: 50pt;
     letter-spacing: 5px; 
-  }
+}
 
-  h2 {
+h2 {
     font-family: 'PT Serif', serif;
     font-size: 30px;
     color: #968d8d; 
-  }
+}
 
 
-  p {
+p {
     font-family: 'PT Serif', serif;
     color: #968d8d;
     padding: 10px; 
   
-  }
+}
 
-  li {
 
-  }
-
-  .contenedor {
+.contenedor {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: center;
       align-items: center;
       align-content: center;
-  }
+      background-color: lightgoldenrodyellow;
+}
