@@ -21,7 +21,6 @@
     
     function recogerDatos() {
 
-
     var nombre = document.getElementById("nombre").value;
     var dinero =  parseInt(document.getElementById("dinero").value);
     var meses = parseInt(document.getElementById("meses").value);
@@ -36,14 +35,11 @@
         cliente = clienteNo.value;
     }
 
-
     var intereses = parseInt((dinero * 5)/100);
-
 
     function infoCuotaPrestamo(prestamo) {
         return prestamo.dinero + " " + prestamo.intereses
     }
-
 
     function prestamo (nombre, dinero, meses, intereses) {
 
@@ -61,21 +57,17 @@
     todosLosPrestamos.push(new prestamo(nombre, dinero, meses, intereses));
     console.log(todosLosPrestamos)
 
-    var descuento = 100;
-    var miCuotaConDescuento;
+    var descuento = 1000;
     var cuotaPrestamo = (dinero / meses) + intereses;
-
+    var miCuotaConDescuento= cuotaPrestamo - descuento;
     function sacarCuotaFinal(){
         
-            if ( cliente) {
-                miCuotaConDescuento = alert("Tu cuota será de" + " " + "$" + (cuotaPrestamo - descuento));
+            if ( cliente ==="si") {
+                miCuotaConDescuento;
         }   else if (cliente === "no"){
-            alert("Tu cuota será de" + " " + "$" + cuotaPrestamo);
+            cuotaPrestamo;
         }   return miCuotaConDescuento;
     }
-
-
-    sacarCuotaFinal()
 
 
     var parrafo = document.createElement("p");
